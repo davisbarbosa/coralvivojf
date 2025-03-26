@@ -1,0 +1,451 @@
+.card {
+  height: 100%;
+}
+.card-img-top {
+  max-height: 50%;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  margin-bottom: 5px;
+}
+.navTop {
+  background-color: #2b3183;
+  border-bottom: 3px solid #00a6e0;
+  height: 50px;
+}
+
+.navTop.borderDark {
+  border-bottom: 3px solid #fff;
+}
+
+.navBottom {
+  height: 50px;
+  background-color: #2b3183;
+  border-top: 3px solid #00a6e0;
+  display: flex;
+  justify-content: end;
+}
+
+.navBottom.borderDark {
+  border-top: 3px solid #fff;
+}
+
+.nav-link {
+  color: #2b3183;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.estoque-geral {
+  margin-top: 40px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #2b3183;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .navTop {
+    justify-content: center;
+  }
+}
+.navbar-brand {
+  padding-left: 250px;
+}
+.navbar-brand img {
+  position: absolute;
+  width: 250px;
+  left: 0;
+  top: -43px;
+}
+
+.navbar-collapse.collapse.show {
+  padding-top: 50px;
+}
+.navbar-collapse.collapse.show .navbar-nav .nav-link {
+  text-align: center;
+}
+
+.logo-holder {
+  background-color: #fff;
+  height: 180px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 4px solid #00a6e0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+/* src/NotFound.css */
+.not-found {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.not-found h1 {
+  font-size: 5rem;
+  color: #ff0000;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+}
+
+.not-found p {
+  font-size: 1.2rem;
+}
+
+.product-list-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+button .svg-inline--fa {
+  font-size: 1rem; /* Ajusta o tamanho dos ícones */
+}
+
+button.active .svg-inline--fa {
+  color: #0d6efd; /* Cor ativa */
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-light {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #000 !important;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+  color: #fff !important;
+}
+
+/* Tema Claro */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-mode .banner-section {
+  background-color: #007bff;
+}
+
+.light-mode .theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* Tema Escuro */
+.dark-mode {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.dark-mode .banner-section {
+  background-color: #000;
+}
+
+.dark-mode .theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+button {
+  margin: 5px;
+}
+
+button {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+button.darkButton.btn.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  font-size: 14px;
+}
+
+button.darkButton.btn.btn-primary:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+button.lightButton.btn.btn-primary {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 14px;
+}
+
+button.lightButton.btn.btn-primary:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+}
+
+.bg-dark .btn-close {
+  --bs-btn-close-color: #fff;
+  color: var(--bs-btn-close-color);
+}
+
+.card-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-footer .btn {
+  width: 100%;
+  margin: 0 !important;
+}
+.card-body {
+  padding: 10px;
+}
+
+.instagram-post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer p {
+  margin: 0.25rem;
+}
+
+/* Header */
+
+:root {
+	--hue: 223;
+	--primary: hsl(var(--hue),90%,50%);
+	--trans-dur: 0.6s;
+	--trans-timing: cubic-bezier(0.65,0,0.35,1);
+}
+.switch,
+.switch__input {
+	display: block;
+	-webkit-tap-highlight-color: transparent;
+}
+.switch {
+	margin: auto;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.switch__icon {
+	color: hsla(var(--hue),10%,80%);
+	pointer-events: none;
+	position: absolute;
+	top: 0.375em;
+	left: 0.375em;
+	width: 0.75em;
+	height: 0.75em;
+	transition:
+		color var(--trans-dur),
+		transform var(--trans-dur) var(--trans-timing);
+}
+.switch__icon:nth-of-type(2) {
+	right: 0.375em;
+	left: auto;
+}
+.switch__inner,
+.switch__inner-icons {
+	border-radius: 0.5em;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 0.25em;
+	left: 0.25em;
+	width: 2.25em;
+	height: 1em;
+}
+.switch__inner:before,
+.switch__inner-icons {
+	transition: transform var(--trans-dur) var(--trans-timing);
+	transform: translateX(-1.25em);
+}
+.switch__inner:before {
+	background-color: var(--primary);
+	border-radius: inherit;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.switch__inner-icons {
+	pointer-events: none;
+}
+.switch__inner-icons .switch__icon {
+	color: hsl(0,0%,100%);
+	top: 0.125em;
+	left: 0.125em;
+	transform: translateX(1.25em);
+}
+.switch__inner-icons .switch__icon:nth-child(2) {
+	right: 0.125em;
+	left: auto;
+}
+.switch__input {
+	background-color: hsl(0,0%,100%);
+	border-radius: 0.75em;
+	box-shadow:
+		0 0 0 0.0625em hsla(var(--hue),90%,50%,0),
+		0 0.125em 0.5em hsla(var(--hue),10%,10%,0.1);
+	outline: transparent;
+	width: 2.75em;
+	height: 1.5em;
+	-webkit-appearance: none;
+	appearance: none;
+	transition:
+		background-color var(--trans-dur),
+		box-shadow var(--trans-dur);
+}
+.switch__input:checked {
+	background-color: hsl(var(--hue),10%,10%);
+}
+.switch__input:checked ~ .switch__icon {
+	color: hsla(var(--hue),10%,40%);
+}
+.switch__input:checked ~ .switch__inner:before,
+.switch__input:checked ~ .switch__inner-icons {
+	transform: translateX(1.25em);
+}
+.switch__input:not(:checked) ~ .switch__icon:first-of-type,
+.switch__input:checked ~ .switch__icon:nth-of-type(2) {
+	transform: rotate(360deg);
+}
+.switch__input:checked ~ .switch__inner-icons .switch__icon:first-of-type {
+	transform: translateX(-1.25em) rotate(-360deg);
+}
+.switch__input:checked ~ .switch__inner-icons .switch__icon:nth-of-type(2) {
+	transform: translateX(-1.25em) rotate(360deg);
+}
+.switch__input:focus-visible {
+	box-shadow:
+		0 0 0 0.0625em hsla(var(--hue),90%,50%,1),
+		0 0.125em 0.5em hsla(var(--hue),10%,10%,0.1);
+}
+.switch__sr {
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+
+.btn-primary {
+  background-color: #2b3183;
+}
+
+.carousel img {
+  width: auto; /* Permite que a largura da imagem seja ajustada automaticamente */
+  height: auto; /* Permite que a altura da imagem seja ajustada automaticamente */
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+  max-height: 960px; /* Define uma altura máxima para as imagens */
+  object-fit: contain; /* Garante que a imagem mantenha sua proporção original */
+}
+
+.ProductDetails .video-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 443px;
+}
+
+.ProductDetails .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 443px;
+}
+
+/* src/components/Maintenance.css */
+.maintenance-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.maintenance-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.maintenance-container p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+
+.card-footer {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-footer button {
+  border: 0;
+  border-radius: 0;
+}
+
+.card {
+  border: 1px solid #2b3183;
+}
+
+.CarouselProductDetails .carousel-item {
+  max-height: 443px;
+  overflow: hidden;
+}
+.CarouselProductDetails .carousel-item img {
+  object-fit: cover;
+}

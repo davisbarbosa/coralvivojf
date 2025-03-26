@@ -1,0 +1,34 @@
+﻿id;name;type;subtype;size;price;promoprice;nparcel;parcel;number;sale;image;image2;image3;enable
+P009;Anjo Lamarck ;;;M;535;535;1;535;1;false;Anjo-Lamarck.webp;;;true
+P024;Blenio bicolor ;;;P;199;199;1;199;1;false;blenio-bicolor.webp;;;true
+P025;Blenio bicolor ;;;M;199;199;1;199;1;false;blenio-bicolor.webp;;;true
+P005;Coral beauty ;;;M;589;589;1;589;1;false;coral-beauty.webp;;;true
+P022;Donzela bicolor ;;;M;99;99;1;99;2;false;;;;false
+P023;Donzela black bar ;;;P;99;99;1;99;1;false;donzela-back-bar.webp;;;true
+P008;Donzela kupang ;;;P;140;140;1;140;2;false;Donzela-kupang.webp;;;true
+P007;Donzela springeri ;;;P;130;130;1;130;2;false;Donzela-springeri.webp;;;true
+P033;Donzela yellow tail ;;;P;115;115;1;115;1;false;;;;false
+P028;Fairy lubbock ;;;P;269;269;1;269;2;false;fairy-lubbock.webp;;;true
+P001;Fox face ;;;M;430;430;1;430;1;false;foxface.webp;;;true
+P026;Goby clown yellow ;;;P;169;169;1;169;1;false;yellow-clown-goby.webp;;;true
+P021;Gramma ;;;M;140;140;1;140;1;false;gramma.webp;;;true
+P003;Green Chromis ;;;P;99;99;1;99;3;false;green-chromis.webp;;;true
+P015;Hepatus ;;;P;499;499;1;499;1;false;hepatus.webp;;;true
+P006;Mandarin Spotted ;;;P;289;289;1;289;1;false;mandarin-spotted.webp;;;true
+P019;Melanurus ;;;P;399;399;1;399;1;false;Melanurus.webp;;;true
+P020;Melanurus ;;;M;399;399;1;399;1;false;Melanurus.webp;;;true
+P029;Mimic ;;;P;840;840;1;840;1;false;;;;false
+P032;Naso Blond ;;;M;1040;1040;1;1040;1;false;naso.webp;;;true
+P002;Orange shoulder ;;;M;699;699;1;699;1;false;Orange-shoulder.webp;;;true
+P010;Palhaço ocellaris comum ;;;P;40;40;1;40;2;false;ocellaris.webp;;;true
+P012;Palhaço ocellaris comum (fêmea) ;;;G;97;97;1;97;1;false;ocellarisblack.webp;;;true
+P011;Palhaço ocellaris comum black ;;;P;60;60;1;60;2;false;ocellarisblack.webp;;;true
+P004;Pseudochromis bicolor ;;;P;159;159;1;159;2;false;Pseudochromis-bicolor.webp;;;true
+P013;Radiatus ;;;P;85;85;1;85;3;false;radiatus.webp;;;true
+P014;Radiatus ;;;G;85;85;1;85;3;false;radiatus.webp;;;true
+P016;Sailfin ;;;M;599;599;1;599;1;false;sailfin.webp;;;true
+P017;Scopas ;;;G;299;299;1;299;1;false;scopas.webp;;;true
+P018;Scopas ;;;M;299;299;1;299;1;false;scopas.webp;;;true
+P031;Tomini ;;;P;734;734;1;734;1;false;tomini.webp;;;true
+P030;Yellow tang ;;;M;1990;1990;1;1990;1;false;yellowtang.webp;;;true
+P027;Yellow watchman ;;;M;199;199;1;199;2;false;yellow-watchman.webp;;;true
