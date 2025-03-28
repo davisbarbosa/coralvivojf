@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "@Naty1985",
+    "database": "inventorymanagement",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "@Naty1985",
+    "database": "inventorymanagement",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "@Naty1985",
+    "database": "inventorymanagement",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
