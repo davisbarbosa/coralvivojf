@@ -1,0 +1,30 @@
+[
+  {
+    "productId": "PROD001",
+    "valueId": 1
+  },
+  {
+    "productId": "PROD001",
+    "valueId": 5
+  },
+  {
+    "productId": "PROD001",
+    "valueId": 10
+  },
+  {
+    "productId": "A015",
+    "valueId": 12
+  },
+  {
+    "productId": "A015",
+    "valueId": 15
+  },
+  {
+    "productId": "P009",
+    "valueId": 19
+  },
+  {
+    "productId": "P009",
+    "valueId": 21
+  }
+]

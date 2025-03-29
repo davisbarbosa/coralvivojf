@@ -1,0 +1,37 @@
+[
+  {
+    "attributeId": 1,
+    "name": "brand",
+    "categoryId": 1
+  },
+  {
+    "attributeId": 2,
+    "name": "subtype",
+    "categoryId": 1
+  },
+  {
+    "attributeId": 3,
+    "name": "size",
+    "categoryId": 1
+  },
+  {
+    "attributeId": 4,
+    "name": "coral_type",
+    "categoryId": 6
+  },
+  {
+    "attributeId": 5,
+    "name": "size",
+    "categoryId": 6
+  },
+  {
+    "attributeId": 6,
+    "name": "fish_type",
+    "categoryId": 7
+  },
+  {
+    "attributeId": 7,
+    "name": "size",
+    "categoryId": 7
+  }
+]

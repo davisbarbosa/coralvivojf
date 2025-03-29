@@ -1,0 +1,30 @@
+[
+  {
+    "categoryId": 1,
+    "name": "Condicionadores de Água"
+  },
+  {
+    "categoryId": 2,
+    "name": "Suplemento"
+  },
+  {
+    "categoryId": 3,
+    "name": "Alimento"
+  },
+  {
+    "categoryId": 4,
+    "name": "Materiais Filtrantes"
+  },
+  {
+    "categoryId": 5,
+    "name": "Desinfetante"
+  },
+  {
+    "categoryId": 6,
+    "name": "Corais"
+  },
+  {
+    "categoryId": 7,
+    "name": "Peixes"
+  }
+]

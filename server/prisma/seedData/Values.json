@@ -1,0 +1,112 @@
+[
+  {
+    "valueId": 1,
+    "value": "ZBiotec",
+    "attributeId": 1
+  },
+  {
+    "valueId": 2,
+    "value": "Fauna Marin",
+    "attributeId": 1
+  },
+  {
+    "valueId": 3,
+    "value": "Quantum",
+    "attributeId": 1
+  },
+  {
+    "valueId": 4,
+    "value": "Colombo",
+    "attributeId": 1
+  },
+  {
+    "valueId": 5,
+    "value": "Acelerador Biológico",
+    "attributeId": 2
+  },
+  {
+    "valueId": 6,
+    "value": "Corais",
+    "attributeId": 2
+  },
+  {
+    "valueId": 7,
+    "value": "Balling",
+    "attributeId": 2
+  },
+  {
+    "valueId": 8,
+    "value": "Teste",
+    "attributeId": 2
+  },
+  {
+    "valueId": 9,
+    "value": "100ml",
+    "attributeId": 3
+  },
+  {
+    "valueId": 10,
+    "value": "250ml",
+    "attributeId": 3
+  },
+  {
+    "valueId": 11,
+    "value": "500ml",
+    "attributeId": 3
+  },
+  {
+    "valueId": 12,
+    "value": "sps",
+    "attributeId": 4
+  },
+  {
+    "valueId": 13,
+    "value": "lps",
+    "attributeId": 4
+  },
+  {
+    "valueId": 14,
+    "value": "soft",
+    "attributeId": 4
+  },
+  {
+    "valueId": 15,
+    "value": "P",
+    "attributeId": 5
+  },
+  {
+    "valueId": 16,
+    "value": "M",
+    "attributeId": 5
+  },
+  {
+    "valueId": 17,
+    "value": "G",
+    "attributeId": 5
+  },
+  {
+    "valueId": 18,
+    "value": "Marine",
+    "attributeId": 6
+  },
+  {
+    "valueId": 19,
+    "value": "Angelfish",
+    "attributeId": 6
+  },
+  {
+    "valueId": 20,
+    "value": "P",
+    "attributeId": 7
+  },
+  {
+    "valueId": 21,
+    "value": "M",
+    "attributeId": 7
+  },
+  {
+    "valueId": 22,
+    "value": "G",
+    "attributeId": 7
+  }
+]

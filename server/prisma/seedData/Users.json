@@ -1,0 +1,14 @@
+[
+  {
+    "userId": "usr_001",
+    "name": "Admin User",
+    "email": "admin@coralvivo.com",
+    "password": "21232f297a57a5a743894a0e4a801fc3"
+  },
+  {
+    "userId": "usr_002",
+    "name": "Test User",
+    "email": "test@coralvivo.com", 
+    "password": "21232f297a57a5a743894a0e4a801fc3"
+  }
+]

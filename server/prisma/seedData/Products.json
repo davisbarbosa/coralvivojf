@@ -1,0 +1,32 @@
+[
+  {
+    "productId": "PROD001",
+    "name": "Delta Fish - Acelerador Biológico",
+    "price": 160.00,
+    "discountPrice": 160.00,
+    "stockQuantity": 100,
+    "onSale": false,
+    "categoryId": 1,
+    "imageUrl": "delta_acelerador_500.webp"
+  },
+  {
+    "productId": "A015",
+    "name": "Acropora red dragon yellow tip",
+    "price": 190.00,
+    "discountPrice": 190.00,
+    "stockQuantity": 1,
+    "onSale": false,
+    "categoryId": 2,
+    "imageUrl": "IMG_20241029_172155601.webp"
+  },
+  {
+    "productId": "P009",
+    "name": "Anjo Lamarck",
+    "price": 535.00,
+    "discountPrice": 535.00,
+    "stockQuantity": 1,
+    "onSale": false,
+    "categoryId": 3,
+    "imageUrl": "Anjo-Lamarck.webp"
+  }
+]

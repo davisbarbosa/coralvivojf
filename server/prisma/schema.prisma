@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+  userId    String   @id
+  name      String
+  email     String
+  password  String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @map("updated_at")
+}
+
+model Categories {
+  categoryId  Int         @id @default(autoincrement())
+  name        String      @unique
+  products    Products[]
+  attributes  Attributes[]
+}
+
+model Attributes {
+  attributeId Int      @id @default(autoincrement())
+  name        String
+  categoryId  Int
+  category    Categories @relation(fields: [categoryId], references: [categoryId], onDelete: Cascade)
+  values      Values[]
+
+  @@index([categoryId])
+  @@unique([name, categoryId])
+}
+
+model Values {
+  valueId     Int      @id @default(autoincrement())
+  value       String
+  attributeId Int
+  attribute   Attributes @relation(fields: [attributeId], references: [attributeId], onDelete: Cascade)
+  products    ProductAttributes[]
+
+  @@index([attributeId])
+}
+
+model Products {
+  productId      String   @id
+  name           String
+  price          Decimal  @db.Decimal(10, 2)
+  rating         Float?
+  stockQuantity  Int      @map("stock_quantity")
+  discountPrice  Decimal? @map("discount_price") @db.Decimal(10, 2)
+  onSale         Boolean? @default(false) @map("on_sale")
+  categoryId     Int
+  imageUrl       String?  @map("image_url")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @default(now()) @map("updated_at")
+  category       Categories @relation(fields: [categoryId], references: [categoryId], onDelete: Cascade)
+  productAttributes ProductAttributes[]
+
+  @@index([categoryId])
+}
+
+model ProductAttributes {
+  productId  String
+  valueId    Int
+  product    Products @relation(fields: [productId], references: [productId], onDelete: Cascade)
+  value      Values   @relation(fields: [valueId], references: [valueId], onDelete: Cascade)
+
+  @@id([productId, valueId])
+  @@index([valueId])
+}
