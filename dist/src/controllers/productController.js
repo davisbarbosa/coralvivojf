@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteProduct = exports.updateProduct = exports.createProduct = exports.getProductById = exports.getProducts = void 0;
+exports.deleteProduct = exports.updateProduct = exports.createProduct = exports.getProductByCategory = exports.getProductById = exports.getProducts = void 0;
 const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 // Formatting helpers
@@ -95,6 +95,25 @@ const getProductById = (req, res) => __awaiter(void 0, void 0, void 0, function*
     }
 });
 exports.getProductById = getProductById;
+const getProductByCategory = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const { id } = req.params;
+        const products = yield prisma.products.findMany({
+            where: { categoryId: parseInt(id) },
+            include: productInclude,
+        });
+        if (!products.length) {
+            res.status(404).json({ message: "No products found in this category" });
+            return;
+        }
+        res.json(products.map(formatProduct));
+    }
+    catch (error) {
+        console.error('Error fetching products by category:', error);
+        res.status(500).json({ message: "Error retrieving products" });
+    }
+});
+exports.getProductByCategory = getProductByCategory;
 const createProduct = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const { name, price, stockQuantity, categoryId, imageUrl, attributes, discountPrice, onSale, } = req.body;

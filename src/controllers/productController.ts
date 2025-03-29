@@ -114,6 +114,29 @@ export const getProductById = async (
   }
 };
 
+export const getProductByCategory = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const { id } = req.params;
+    const products = await prisma.products.findMany({
+      where: { categoryId: parseInt(id) },
+      include: productInclude,
+    });
+
+    if (!products.length) {
+      res.status(404).json({ message: "No products found in this category" });
+      return;
+    }
+
+    res.json(products.map(formatProduct));
+  } catch (error) {
+    console.error('Error fetching products by category:', error);
+    res.status(500).json({ message: "Error retrieving products" });
+  }
+};
+
 export const createProduct = async (
   req: Request<{}, {}, CreateProductBody>,
   res: Response
