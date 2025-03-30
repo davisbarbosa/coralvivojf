@@ -32,6 +32,7 @@ const formatProduct = (product) => {
             attributeId: pa.value.attribute.attributeId.toString(),
             attributeName: pa.value.attribute.name,
             attributeValue: pa.value.value,
+            attributeValueId: pa.value.valueId.toString(),
         })),
     });
 };
