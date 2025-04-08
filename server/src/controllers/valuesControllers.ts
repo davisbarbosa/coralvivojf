@@ -35,23 +35,16 @@ export const getValueById = async (req: Request, res: Response): Promise<void> =
 export const createValue = async (req: Request, res: Response): Promise<void> => {
   try {
     const { value, attributeId } = req.body;
-
-    // Ensure valueId is not being passed in the request body
     const newValue = await prisma.values.create({
       data: {
         value,
         attributeId: parseInt(attributeId),
       },
     });
-
     res.status(201).json(newValue);
   } catch (error) {
-    if (error.code === 'P2002') {
-      res.status(400).json({ message: "Unique constraint failed on the valueId field" });
-    } else {
-      console.error("Error creating value:", error);
-      res.status(500).json({ message: "Error creating value" });
-    }
+    console.error("Error creating value:", error);
+    res.status(500).json({ message: "Error creating value" });
   }
 };
 
