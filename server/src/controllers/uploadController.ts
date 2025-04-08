@@ -1,7 +1,10 @@
 import { Request, Response } from "express";
 import { S3Client, PutObjectCommand, DeleteObjectCommand } from "@aws-sdk/client-s3";
 import { RequestHandler } from "express";
+import dotenv from 'dotenv';
 import multer from "multer";
+dotenv.config();
+
 
 const s3Client = new S3Client({
   region: process.env.AWS_REGION,

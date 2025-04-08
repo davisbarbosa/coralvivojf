@@ -4,12 +4,14 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
+
 /* ROUTE IMPORTS */
 import productRoutes from "./routes/productRoutes";
 import userRoutes from "./routes/userRoutes";
 import categoryRoutes from "./routes/categoryRoutes";
 import attributesRoutes from "./routes/attributesRoutes";
 import uploadRoutes from "./routes/uploadRoutes";
+import valuesRoutes from "./routes/valuesRoutes";
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -28,6 +30,7 @@ app.use("/users", userRoutes); // http://localhost:8000/users
 app.use('/categories', categoryRoutes);
 app.use('/attributes', attributesRoutes);
 app.use('/upload', uploadRoutes);
+app.use("/values", valuesRoutes);
 
 /* SERVER */
 const port = Number(process.env.PORT) || 3001;
