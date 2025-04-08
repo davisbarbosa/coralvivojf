@@ -52,7 +52,7 @@ export const updateValue = async (req: Request, res: Response): Promise<void> =>
   try {
     const { valueId } = req.params;
     const { value, attributeId } = req.body;
-    const updatedValue = await prisma.values.update({
+    const updatedValue = await prisma.values.update({ 
       where: { valueId: parseInt(valueId) },
       data: {
         value,
