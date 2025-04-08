@@ -22,13 +22,7 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
-// Configure CORS to allow specific origin
-app.use(cors({
-  origin: "https://www.coralvivojf.com.br", // Allow this specific origin
-  methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
-  credentials: true, // Allow cookies and credentials
-}));
+app.use(cors());
 
 /* ROUTES */
 app.use("/products", productRoutes); // http://localhost:8000/products
